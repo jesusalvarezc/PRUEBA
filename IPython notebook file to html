@@ -1,0 +1,12 @@
+Convert the IPython notebook file to html.
+
+ipython nbconvert --to html notebook.ipynb  
+This will convert the IPython document file notebook.ipynb into the html output format.
+
+Update: For HTML output, you should now use jupyter in place of ipython:
+
+jupyter nbconvert --to html notebook.ipynb
+Convert the html file notebook.html into a pdf file called notebook.pdf. In Windows, Mac or Linux, install wkhtmltopdf. wkhtmltopdf is a command line utility to convert html to pdf using WebKit. You can download wkhtmltopdf from the linked webpage, or in many Linux distros it can be found in their repositories.
+
+wkhtmltopdf notebook.html notebook.pdf
+source: https://stackoverflow.com/questions/15998491/how-to-convert-ipython-notebooks-to-pdf-and-html
